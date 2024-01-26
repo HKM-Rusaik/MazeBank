@@ -1,6 +1,8 @@
 package com.example.mazebank.views;
 
 import com.example.mazebank.Controllers.client.ClientController;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -8,11 +10,19 @@ import javafx.stage.Stage;
 
 public class ViewFactory {
     //Client Views
-
+    private final StringProperty clientSelectedMenuItem;
     private AnchorPane dashboardView;
+    private AnchorPane transactionView;
 
-    public ViewFactory() {}
-        public AnchorPane getDashboardView() {
+    public ViewFactory() {
+        this.clientSelectedMenuItem = new SimpleStringProperty("");
+    }
+
+    public StringProperty getClientSelectedMenuItem() {
+        return clientSelectedMenuItem;
+    }
+
+    public AnchorPane getDashboardView() {
         if(dashboardView == null) {
             try{
                 dashboardView = new FXMLLoader(getClass().getResource("/FXML/Client/Dashboard.fxml")).load();
@@ -21,6 +31,17 @@ public class ViewFactory {
             }
         }
         return dashboardView;
+    }
+
+    public AnchorPane getTransactionView() {
+        if(transactionView == null) {
+            try {
+                transactionView = new FXMLLoader(getClass().getResource("/FXML/Client/Transactions.fxml")).load();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return transactionView;
     }
 
     public void showLoginWindow() {
@@ -46,5 +67,9 @@ public class ViewFactory {
         stage.setScene(scene);
         stage.setTitle("Maze Bank");
         stage.show();
+    }
+
+    public void closeStage(Stage stage) {
+        stage.close();
     }
 }

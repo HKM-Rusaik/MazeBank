@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="account_view_container" stylesheets="@../../Styles/Accounts.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mazebank.Controllers.client.AccountsController">
+   <children>
+      <Text layoutX="26.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <VBox prefHeight="300.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number" />
+            <Label text="4325 6789" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Limit:" />
+            <Label text="Label" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:" />
+            <Label text="2023-12-25" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" />
+            <Label text="\$3 000.00" />
+         </children>
+      </VBox>
+      <Text layoutX="14.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saving Account" />
+      <VBox layoutX="21.0" layoutY="398.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number" />
+            <Label text="4325 6098" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Withdrawal Limit:" />
+            <Label text="\$ 10 000.00" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:" />
+            <Label text="2023-7-07" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" />
+            <Label text="\$10 500.00" />
+         </children>
+      </VBox>
+      <Text layoutX="467.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Funds To Savings Account" />
+      <TextField layoutX="573.0" layoutY="40.0" prefHeight="26.0" prefWidth="221.0" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="72.0" />
+      <Button layoutX="617.0" layoutY="110.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="222.0" text="Button" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="123.0" />
+   </children>
+</AnchorPane>
