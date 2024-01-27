@@ -27,7 +27,7 @@
                <FontAwesomeIconView glyphName="HANDSHAKE_ALT" strokeType="OUTSIDE" strokeWidth="0.0"/>
             </graphic>
          </Button>
-         <Button fx:id="Accounts_btn" mnemonicParsing="false" text="Accounts">
+         <Button fx:id="accounts_btn" mnemonicParsing="false" text="Accounts">
             <graphic>
                <FontAwesomeIconView glyphName="ADDRESS_BOOK_ALT" size="20" strokeType="OUTSIDE"
                                     strokeWidth="0.0"/>
