@@ -17,7 +17,7 @@ public class ViewFactory {
     private AnchorPane transactionView;
     private AnchorPane accountsView;
 
-    //client views
+    //Admin views
     private  final ObjectProperty<AdminMenuOptions> adminSelectedMenuItem;
     private AnchorPane createClientView;
     private AnchorPane clientsView;

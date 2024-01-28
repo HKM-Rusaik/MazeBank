@@ -3,7 +3,7 @@ package com.example.mazebank.Controllers.admin;
 import com.example.mazebank.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
-import com.example.mazebank.views.AdminMenuOptions;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -13,7 +13,7 @@ public class AdminController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Model.getInstance().getViewFactory().getClientSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
+        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
             switch (newVal) {
                 case CLIENTS -> admin_parent.setCenter(Model.getInstance().getViewFactory().getClientsView());
                 default -> admin_parent.setCenter(Model.getInstance().getViewFactory().getCreateClientView());

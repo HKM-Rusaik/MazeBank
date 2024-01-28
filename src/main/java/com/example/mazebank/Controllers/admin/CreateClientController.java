@@ -19,7 +19,7 @@ public class CreateClientController implements Initializable {
     public TextField ch_amount_fld;
     public CheckBox sv_acc_box;
     public TextField sv_amount_fld;
-    public Button createclient_btn;
+    public Button create_client_btn;
     public Label error_lbl;
 
     @Override
